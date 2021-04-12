@@ -1,100 +1,138 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>CSS Cheat Sheet</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-</head>
-<body>
-    <div class="container">
-        <!--class = multiple  id = single-->  
-        <div class="box-1">
-            <h1>Hello World</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi dicta tenetur maiores nemo? Perspiciatis dolorum culpa dolor id repellendus in, necessitatibus, eum explicabo consequatur expedita veniam voluptatibus numquam, asperiores eaque!</p>
-            </body>
-        </div>
-        <div class="box-2">
-            <h1>Goodbye World</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi dicta tenetur maiores nemo? Perspiciatis dolorum culpa dolor id repellendus in, necessitatibus, eum explicabo consequatur expedita veniam voluptatibus numquam, asperiores eaque!</p>
-            </body>
-            <a class="button" href="">Read More</a>
-        </div>
+    <head>
+    </head>
+    <body>
+        <a href="Blog.html">Go to blog</a>
+        <hr>
+        <!--headings-->
+        <title>learning HTML</title>
+        <h1>Heading one</h1>
+        <h2>Heading two</h2>
+        <h3>Heading three</h3>
+        <h4>Heading four</h4>
+        <h5>Heading five</h5>
+        <h6>Heading six</h6>
 
-        <div class="categories">
-            <h2>Categories</h2>
-            <ul>
-                <li><a href="#">Category 1</a></li>
-                <li><a href="#">Category 2</a></li>
-                <li><a href="#">Category 3</a></li>
-                <li><a href="#">Category 4</a></li>
-                <li><a href="test.html">Category 5</a></li>
-            </ul>
-        </div>
-        <form class="my-form">
-            <div class="form-group">
-                <label>Name: </label>
-                <input type="text" name="name">
-            </div>
-            <div class="form-group">
-                <label>Email: </label>
-                <input type="text" name="email">
-            </div>
-            <div class="form-group">
-                <label>Message: </label>
-                <textarea name="message"></textarea>
-            </div>
-            <input class="button" type="submit" value="Submit" name="">
-        </form>
-        <div class="block">
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugiat fugit asperiores culpa perspiciatis repellendus hic quasi doloremque
-            <p>
-        </div>
-        <div class="block">
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugiat fugit asperiores culpa perspiciatis repellendus hic quasi doloremque
-            </p>
-        </div>
-        <div class="block">
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugiat fugit asperiores culpa perspiciatis repellendus hic quasi doloremque
-            </p>
-        </div>
+        <!--Paragraph-->
+        <p>
+            <strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </strong><em>Aspernatur assumenda ut, amet ullam, dolorem, ratione reiciendis a optio veritatis voluptas neque nisi? </em>Aperiam et placeat saepe eius veritatis, consectetur unde!
+        </p>
+        <p>
+            <a href="http://loser.com" target="_blank">Go to loser.com!</a> Ducimus, laboriosam quae. Dolor totam omnis voluptate. Consequatur quaerat natus, doloremque cum facilis maxime iusto adipisci soluta voluptates, nobis quod temporibus vel.
+        </p>
 
-        <div class="clr"></div>
-
-        <div id="main-block">
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugiat fugit asperiores culpa perspiciatis repellendus hic quasi doloremque
-            </p>
-        </div>
-
-        <div id="sidebar">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugiat fugit asperiores culpa perspiciatis repellendus hic quasi doloremque
-            </p>
-        </div>
-
-        <div class="clr"></div>
-
-        <div class="p-box">
-            <h1>Hello</h1>
-            <h2>Goodbye</h2>
-        </div>
-
-        <ul class="my-list">
-            <li>List item</li>
-            <li>List item</li>
-            <li>List item</li>
-            <li>List item</li>
-            <li>List item</li>
-            <li>List item</li>
-            <li>List item</li>
-            <li>List item</li>
+        <!--List-->
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
         </ul>
+        <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+        </ol>
 
-    </div><!-- container ends-->
+        <!--Table-->
 
-    <a class="fix-me button" href="">Hi!</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jalen Locke</td>
+                    <td>Jalen@gmail</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Max Locke</td>
+                    <td>Max@gmail</td>
+                    <td>10</td>
+                </tr> 
+                <tr>
+                    <td>Mommy Locke</td>
+                    <td>Mommy@gmail</td>
+                    <td>29</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <div style="margin-top: 500px;"></div>
-</body>
+        <br>
+        <hr>
+        <br>
+
+        <!--Form-->
+        <form action="process.php" method="POST">
+            <div>
+            <label>First Name</label>
+            <input type="text" name="firstName" placeholder="Enter first name">
+            </div>
+            <br>
+            <div>
+            <label>Last Name</label>
+            <input type="text" name="lastName">
+            </div>
+            <br>
+            <div>
+            <label>Email</label>
+            <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+            <label>Message</label>
+            <Textarea name="message"></Textarea>
+            </div>
+            <br>
+            <div>
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            </div>
+            <br>
+            <div>
+                <label>Age:</label>
+                <input type="number" name="age" value="30">
+            </div>
+            <br>
+            <div>
+                <label >Birthday:</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+        <!--Button-->
+        <button>Click Me</button>
+
+        <br>
+        <!--Image-->
+        <a href="https://external-preview.redd.it/9cSKWq10DZMNKH0LdqunEt6oHsZ37NoAfrg3yKcGEk0.jpg?auto=webp&s=08859a5d787250f73c40ca83b782dbfb14571350">
+        <img src="https://external-preview.redd.it/9cSKWq10DZMNKH0LdqunEt6oHsZ37NoAfrg3yKcGEk0.jpg?auto=webp&s=08859a5d787250f73c40ca83b782dbfb14571350" alt="My sample image" width=200px >
+        </a>
+        <!--Quotations-->
+
+        <blockquote cite="https://external-preview.redd.it/9cSKWq10DZMNKH0LdqunEt6oHsZ37NoAfrg3yKcGEk0.jpg?auto=webp&s=08859a5d787250f73c40ca83b782dbfb14571350">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corporis iusto tempora dicta, sed suscipit dolorum aperiam delectus repudiandae illo beatae temporibus! Deserunt similique voluptate delectus nisi hic ab explicabo?
+        </blockquote>
+        <p>
+            The <abbr title="World Wide Web">WWW</abbr> is awesome
+        </p>
+        <p>
+            <cite>HTML crash course</cite> by Brad Trasversyc
+        </p>
+        <div style="margin-top:500px"></div>
+        
+    </body>
 </html>
